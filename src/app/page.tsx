@@ -107,8 +107,8 @@ export default function LandingPage() {
       title="Performance Metrics"
       description="We deliver measurable results across all our training programs."
       metrics={[
-        { label: "Target", value: "50+" },
-        { label: "TrendingUp", value: "98%" }
+        { icon: Target, value: "50+" },
+        { icon: TrendingUp, value: "98%" }
       ]}
     />
   </div>
@@ -117,7 +117,7 @@ export default function LandingPage() {
       <ProductDetailCard 
         name="All-Access Entrepreneur Guide"
         price="$299"
-        images={{ src: "http://img.b2bpic.net/free-photo/laptop-dark-night-desktop_169016-53733.jpg", alt: "Detail" }}
+        images={[{ src: "http://img.b2bpic.net/free-photo/laptop-dark-night-desktop_169016-53733.jpg", alt: "Detail" }]}
         buttons={[{ text: "Buy Now" }]}
       />
   </div>
