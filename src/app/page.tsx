@@ -9,7 +9,6 @@ import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatin
 import PricingCardNine from '@/components/sections/pricing/PricingCardNine';
 import ProductCatalog from '@/components/ecommerce/productCatalog/ProductCatalog';
 import ProductDetailCard from '@/components/ecommerce/productDetail/ProductDetailCard';
-import { Target, TrendingUp } from 'lucide-react';
 
 export default function LandingPage() {
   return (
@@ -59,21 +58,6 @@ export default function LandingPage() {
         { imageSrc: "http://img.b2bpic.net/free-photo/cozy-hobby-growing-indoor-plants-home_185193-108761.jpg", imageAlt: "Smart Digital Store Hero" },
       ]}
       buttons={[{ text: "Get the Guide", href: "#products" }]}
-      avatars={[
-        { src: "http://img.b2bpic.net/free-photo/black-businessman-happy-expression_1194-2723.jpg", alt: "Black businessman" },
-        { src: "http://img.b2bpic.net/free-photo/modern-stylish-male-dressed-elegant-suit-posing-room-with-loft-interior_613910-1259.jpg", alt: "Stylish male" },
-        { src: "http://img.b2bpic.net/free-photo/portrait-happy-businessman-standing-front-business-center_1150-3039.jpg", alt: "Happy businessman" },
-        { src: "http://img.b2bpic.net/free-photo/low-angle-man-standing-with-crossed-arms_23-2148230798.jpg", alt: "Man with crossed arms" },
-        { src: "http://img.b2bpic.net/free-photo/medium-shot-smiley-working-man-stairs_23-2148230849.jpg", alt: "Smiley working man" },
-      ]}
-      avatarText="Trusted by 5,000+ Entrepreneurs"
-      marqueeItems={[
-        { type: "text", text: "Scalable Growth" },
-        { type: "text", text: "Actionable Strategy" },
-        { type: "text", text: "Digital Success" },
-        { type: "text", text: "Zero Fluff" },
-        { type: "text", text: "Proven Systems" },
-      ]}
     />
   </div>
 
@@ -107,9 +91,12 @@ export default function LandingPage() {
       title="Performance Metrics"
       description="We deliver measurable results across all our training programs."
       metrics={[
-        { label: "Target", value: "50+" },
-        { label: "Growth", value: "98%" }
+        { id: "m1", title: "Target", value: "50+", items: [] },
+        { id: "m2", title: "Growth", value: "98%", items: [] }
       ]}
+      animationType="slide-up"
+      textboxLayout="default"
+      useInvertedBackground={false}
     />
   </div>
 
