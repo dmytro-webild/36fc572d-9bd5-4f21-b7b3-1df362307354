@@ -45,24 +45,19 @@ export default function LandingPage() {
         { imageSrc: "http://img.b2bpic.net/free-photo/young-businessman-looking-digital-tablet-standing-near-modern-chandelier_23-2147937512.jpg", imageAlt: "Smart Digital Store Hero" },
         { imageSrc: "http://img.b2bpic.net/free-photo/glowing-red-warning-triangle-sign-dark-textured-background_84443-91474.jpg", imageAlt: "Smart Digital Store Hero" },
         { imageSrc: "http://img.b2bpic.net/free-photo/i-found-best-solution_329181-699.jpg", imageAlt: "Smart Digital Store Hero" },
-        { imageSrc: "http://img.b2bpic.net/man-blue-suit-posing-white-artistic-wall-from-bricks_613910-10622.jpg", imageAlt: "Smart Digital Store Hero" },
-        { imageSrc: "http://img.b2bpic.net/smart-attractive-smiling-asian-female-business-owner-entrepreneur-hand-hold-coffee-cup-portrait-shot-looking-camera-with-confidentwoman-sitting-table-home-studio_609648-2602.jpg", imageAlt: "Smart Digital Store Hero" },
-        { imageSrc: "http://img.b2bpic.net/top-view-laptop-table-glowing-screen-dark_169016-53642.jpg", imageAlt: "Smart Digital Store Hero" },
+        { imageSrc: "http://img.b2bpic.net/free-photo/man-blue-suit-posing-white-artistic-wall-from-bricks_613910-10622.jpg", imageAlt: "Smart Digital Store Hero" },
+        { imageSrc: "http://img.b2bpic.net/free-photo/smart-attractive-smiling-asian-female-business-owner-entrepreneur-hand-hold-coffee-cup-portrait-shot-looking-camera-with-confidentwoman-sitting-table-home-studio_609648-2602.jpg", imageAlt: "Smart Digital Store Hero" },
+        { imageSrc: "http://img.b2bpic.net/free-photo/top-view-laptop-table-glowing-screen-dark_169016-53642.jpg", imageAlt: "Smart Digital Store Hero" },
       ]}
       rightCarouselItems={[
-        { imageSrc: "http://img.b2bpic.net/cool-background-blank-wallpaper-place-your-concept_1194-641481.jpg", imageAlt: "Smart Digital Store Hero" },
-        { imageSrc: "http://img.b2bpic.net/digital-business-marketing-banner-template_23-2148644269.jpg", imageAlt: "Smart Digital Store Hero" },
-        { imageSrc: "http://img.b2bpic.net/smart-attractive-smiling-asian-female-business-owner-entrepreneur-hand-hold-coffee-cup-portrait-shot-looking-camera-with-confidentwoman-sitting-table-home-studio_609648-2611.jpg", imageAlt: "Smart Digital Store Hero" },
-        { imageSrc: "http://img.b2bpic.net/marketing-strategy-banner-template_23-2148995530.jpg", imageAlt: "Smart Digital Store Hero" },
-        { imageSrc: "http://img.b2bpic.net/computer-dark-room-with-graphs-screen_169016-55085.jpg", imageAlt: "Smart Digital Store Hero" },
-        { imageSrc: "http://img.b2bpic.net/cozy-hobby-growing-indoor-plants-home_185193-108761.jpg", imageAlt: "Smart Digital Store Hero" },
+        { imageSrc: "http://img.b2bpic.net/free-photo/cool-background-blank-wallpaper-place-your-concept_1194-641481.jpg", imageAlt: "Smart Digital Store Hero" },
+        { imageSrc: "http://img.b2bpic.net/free-psd/digital-business-marketing-banner-template_23-2148644269.jpg", imageAlt: "Smart Digital Store Hero" },
+        { imageSrc: "http://img.b2bpic.net/free-photo/smart-attractive-smiling-asian-female-business-owner-entrepreneur-hand-hold-coffee-cup-portrait-shot-looking-camera-with-confidentwoman-sitting-table-home-studio_609648-2611.jpg", imageAlt: "Smart Digital Store Hero" },
+        { imageSrc: "http://img.b2bpic.net/free-psd/marketing-strategy-banner-template_23-2148995530.jpg", imageAlt: "Smart Digital Store Hero" },
+        { imageSrc: "http://img.b2bpic.net/free-photo/computer-dark-room-with-graphs-screen_169016-55085.jpg", imageAlt: "Smart Digital Store Hero" },
+        { imageSrc: "http://img.b2bpic.net/free-photo/cozy-hobby-growing-indoor-plants-home_185193-108761.jpg", imageAlt: "Smart Digital Store Hero" },
       ]}
-      marqueeItems={[
-          { type: "image", src: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3EBk903PZYCIZ66Gnih2nb09GB4/uploaded-1779659576432-wok3f9su.png", alt: "Partner Logo 1" },
-          { type: "image", src: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3EBk903PZYCIZ66Gnih2nb09GB4/uploaded-1779659576432-1obs2ty2.png", alt: "Partner Logo 2" }
-      ]}
-      buttons={[{ text: "Get the Guide", href: "#products" }]
-      }
+      buttons={[{ text: "Get the Guide", href: "#products" }]}
     />
   </div>
 
