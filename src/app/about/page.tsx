@@ -27,17 +27,11 @@ export default function LandingPage() {
       <NavbarLayoutFloatingOverlay
       navItems={[
         {
-          name: "Home",
-          id: "/",
-        },
+          name: "Home",          id: "/"},
         {
-          name: "About",
-          id: "/about",
-        },
+          name: "About",          id: "/about"},
         {
-          name: "Contact",
-          id: "/contact",
-        },
+          name: "Contact",          id: "/contact"},
       ]}
       brandName="Smart Digital Store"
     />
@@ -66,13 +60,9 @@ export default function LandingPage() {
       metricsAnimation="slide-up"
       metrics={[
         {
-          value: "50+",
-          title: "Active Business Guides",
-        },
+          value: "50+",          title: "Active Business Guides"},
         {
-          value: "10k+",
-          title: "Community Members",
-        },
+          value: "10k+",          title: "Community Members"},
       ]}
     />
   </div>
@@ -81,29 +71,19 @@ export default function LandingPage() {
       <FooterBase
       columns={[
         {
-          title: "Company",
-          items: [
+          title: "Company",          items: [
             {
-              label: "About",
-              href: "/about",
-            },
+              label: "About",              href: "/about"},
             {
-              label: "Contact",
-              href: "/contact",
-            },
+              label: "Contact",              href: "/contact"},
           ],
         },
         {
-          title: "Resources",
-          items: [
+          title: "Resources",          items: [
             {
-              label: "All Guides",
-              href: "/",
-            },
+              label: "All Guides",              href: "/"},
             {
-              label: "Privacy Policy",
-              href: "#",
-            },
+              label: "Privacy Policy",              href: "#"},
           ],
         },
       ]}
