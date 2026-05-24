@@ -9,6 +9,7 @@ import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatin
 import PricingCardNine from '@/components/sections/pricing/PricingCardNine';
 import ProductCatalog from '@/components/ecommerce/productCatalog/ProductCatalog';
 import ProductDetailCard from '@/components/ecommerce/productDetail/ProductDetailCard';
+import { Target, TrendingUp } from 'lucide-react';
 
 export default function LandingPage() {
   return (
@@ -95,6 +96,9 @@ export default function LandingPage() {
         { id: "p1", period: "monthly", title: "Starter", price: "$29", features: ["Basic Guides", "Community Access"], button: { text: "Get Started" } },
         { id: "p2", period: "monthly", title: "Pro", price: "$99", features: ["All Guides", "1-on-1 Strategy", "Templates"], button: { text: "Get Started" } }
       ]}
+      animationType="slide-up"
+      textboxLayout="default"
+      useInvertedBackground={false}
     />
   </div>
 
@@ -103,8 +107,8 @@ export default function LandingPage() {
       title="Performance Metrics"
       description="We deliver measurable results across all our training programs."
       metrics={[
-        { icon: "Target", value: "50+" },
-        { icon: "TrendingUp", value: "98%" }
+        { label: "Target", value: "50+" },
+        { label: "TrendingUp", value: "98%" }
       ]}
     />
   </div>
@@ -113,7 +117,7 @@ export default function LandingPage() {
       <ProductDetailCard 
         name="All-Access Entrepreneur Guide"
         price="$299"
-        images={["http://img.b2bpic.net/free-photo/laptop-dark-night-desktop_169016-53733.jpg"]}
+        images={{ src: "http://img.b2bpic.net/free-photo/laptop-dark-night-desktop_169016-53733.jpg", alt: "Detail" }}
         buttons={[{ text: "Buy Now" }]}
       />
   </div>
