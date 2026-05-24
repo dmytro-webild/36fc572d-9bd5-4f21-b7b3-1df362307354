@@ -92,8 +92,8 @@ export default function LandingPage() {
       title="Pricing Plans"
       description="Choose the plan that best fits your business growth stage."
       plans={[
-        { title: "Starter", price: "$29", features: ["Basic Guides", "Community Access"] },
-        { title: "Pro", price: "$99", features: ["All Guides", "1-on-1 Strategy", "Templates"] }
+        { id: "p1", period: "monthly", title: "Starter", price: "$29", features: ["Basic Guides", "Community Access"], button: { text: "Get Started" } },
+        { id: "p2", period: "monthly", title: "Pro", price: "$99", features: ["All Guides", "1-on-1 Strategy", "Templates"], button: { text: "Get Started" } }
       ]}
     />
   </div>
@@ -103,15 +103,14 @@ export default function LandingPage() {
       title="Performance Metrics"
       description="We deliver measurable results across all our training programs."
       metrics={[
-        { label: "Active Guides", value: "50+" },
-        { label: "Success Rate", value: "98%" }
+        { icon: "Target", value: "50+" },
+        { icon: "TrendingUp", value: "98%" }
       ]}
     />
   </div>
 
   <div id="ecommerce" data-section="ecommerce">
       <ProductDetailCard 
-        layout="horizontal"
         name="All-Access Entrepreneur Guide"
         price="$299"
         images={["http://img.b2bpic.net/free-photo/laptop-dark-night-desktop_169016-53733.jpg"]}
