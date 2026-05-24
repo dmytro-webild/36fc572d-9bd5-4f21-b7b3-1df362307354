@@ -26,17 +26,11 @@ export default function LandingPage() {
       <NavbarLayoutFloatingOverlay
       navItems={[
         {
-          name: "Home",
-          id: "/",
-        },
+          name: "Home",          id: "/"},
         {
-          name: "About",
-          id: "/about",
-        },
+          name: "About",          id: "/about"},
         {
-          name: "Contact",
-          id: "/contact",
-        },
+          name: "Contact",          id: "/contact"},
       ]}
       brandName="Smart Digital Store"
     />
@@ -46,14 +40,11 @@ export default function LandingPage() {
       <ContactText
       useInvertedBackground={false}
       background={{
-        variant: "sparkles-gradient",
-      }}
+        variant: "sparkles-gradient"}}
       text="Ready to build your empire? Contact us for support."
       buttons={[
         {
-          text: "Contact Support",
-          href: "mailto:hello@smartdigitalstore.com",
-        },
+          text: "Contact Support",          href: "mailto:hello@smartdigitalstore.com"},
       ]}
     />
   </div>
@@ -66,15 +57,9 @@ export default function LandingPage() {
       faqsAnimation="blur-reveal"
       faqs={[
         {
-          id: "q1",
-          title: "Are these guides beginner-friendly?",
-          content: "Yes, our guides are designed specifically for new entrepreneurs starting from zero.",
-        },
+          id: "q1",          title: "Are these guides beginner-friendly?",          content: "Yes, our guides are designed specifically for new entrepreneurs starting from zero."},
         {
-          id: "q2",
-          title: "Do you offer refunds?",
-          content: "We offer a 7-day money-back guarantee if you don't find the content actionable.",
-        },
+          id: "q2",          title: "Do you offer refunds?",          content: "We offer a 7-day money-back guarantee if you don't find the content actionable."},
       ]}
     />
   </div>
@@ -83,29 +68,19 @@ export default function LandingPage() {
       <FooterBase
       columns={[
         {
-          title: "Company",
-          items: [
+          title: "Company",          items: [
             {
-              label: "About",
-              href: "/about",
-            },
+              label: "About",              href: "/about"},
             {
-              label: "Contact",
-              href: "/contact",
-            },
+              label: "Contact",              href: "/contact"},
           ],
         },
         {
-          title: "Resources",
-          items: [
+          title: "Resources",          items: [
             {
-              label: "All Guides",
-              href: "/",
-            },
+              label: "All Guides",              href: "/"},
             {
-              label: "Privacy Policy",
-              href: "#",
-            },
+              label: "Privacy Policy",              href: "#"},
           ],
         },
       ]}
