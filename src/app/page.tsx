@@ -107,14 +107,15 @@ export default function LandingPage() {
       title="Performance Metrics"
       description="We deliver measurable results across all our training programs."
       metrics={[
-        { icon: Target, value: "50+" },
-        { icon: TrendingUp, value: "98%" }
+        { label: "Target", value: "50+" },
+        { label: "Growth", value: "98%" }
       ]}
     />
   </div>
 
   <div id="ecommerce" data-section="ecommerce">
       <ProductDetailCard 
+        layout="page"
         name="All-Access Entrepreneur Guide"
         price="$299"
         images={[{ src: "http://img.b2bpic.net/free-photo/laptop-dark-night-desktop_169016-53733.jpg", alt: "Detail" }]}
