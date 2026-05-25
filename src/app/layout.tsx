@@ -10,8 +10,8 @@ import { Raleway } from "next/font/google";
 
 
 export const metadata: Metadata = {
-  title: 'Smart Digital Store | Actionable Business Guides',
-  description: 'Direct, step-by-step business education PDF guides for young entrepreneurs to build and grow their business from scratch.',
+  title: "Smart Digital Store | Actionable Business Guides",
+  description: "Direct, step-by-step business education PDF guides for young entrepreneurs to build and grow their business from scratch.",
   openGraph: {
     "title": "Smart Digital Store",
     "description": "Actionable business guides for serious entrepreneurs.",
