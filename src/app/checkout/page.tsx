@@ -64,6 +64,7 @@ export default function CheckoutPage() {
                 title="Shipping & Payment Details"
                 description="Please provide your shipping and billing information."
                 tag="Secure Checkout"
+                useInvertedBackground={false}
                 inputPlaceholder="Enter your email for order updates"
                 buttonText="Place Order"
                 termsText="By placing your order, you agree to our Terms and Conditions."
