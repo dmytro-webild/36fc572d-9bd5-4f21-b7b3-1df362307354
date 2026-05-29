@@ -7,7 +7,6 @@ import HeroSplitDoubleCarousel from '@/components/sections/hero/HeroSplitDoubleC
 import MetricCardSeven from '@/components/sections/metrics/MetricCardSeven';
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
 import PricingCardNine from '@/components/sections/pricing/PricingCardNine';
-import ProductCatalog from '@/components/ecommerce/productCatalog/ProductCatalog';
 import ProductDetailCard from '@/components/ecommerce/productDetail/ProductDetailCard';
 
 export default function LandingPage() {
@@ -58,20 +57,10 @@ export default function LandingPage() {
         { imageSrc: "http://img.b2bpic.net/free-photo/computer-dark-room-with-graphs-screen_169016-55085.jpg", imageAlt: "Smart Digital Store Hero" },
         { imageSrc: "http://img.b2bpic.net/free-photo/cozy-hobby-growing-indoor-plants-home_185193-108761.jpg", imageAlt: "Smart Digital Store Hero" }
       ]}
-      buttons={[{ text: "Get the Guide", href: "/products" }]}
+      buttons={[{ text: "Get the Guide", href: "/products" }]
     />
   </div>
 
-  <div id="catalog-section" data-section="catalog-section">
-      <ProductCatalog
-      layout="section"
-      products={[
-        { id: "p1", name: "Identify Problems", price: "$29", rating: 5, imageSrc: "http://img.b2bpic.net/free-psd/digital-marketing-agency-corporate-facebook-cover-template-design_84443-24504.jpg" },
-        { id: "p2", name: "Validate Idea", price: "$29", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/top-view-boss-s-day-arrangement-light-blue-background_23-2148664089.jpg" },
-        { id: "p3", name: "Business Plan", price: "$29", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/contemporary-home-office-urban-apartment-decorated-with-wooden-furniture_482257-119606.jpg" }
-      ]}
-    />
-  </div>
 
   <div id="pricing" data-section="pricing">
       <PricingCardNine
@@ -107,7 +96,7 @@ export default function LandingPage() {
         name="All-Access Entrepreneur Guide"
         price="$299"
         images={[{ src: "http://img.b2bpic.net/free-photo/laptop-dark-night-desktop_169016-53733.jpg", alt: "Detail" }]}
-        buttons={[{ text: "Buy Now" }]}
+        buttons={[{ text: "Buy Now" }]
       />
   </div>
 
