@@ -78,16 +78,16 @@ export default function ProductDetailPage({ params }: { params: { productId: str
             description="Explore the groundbreaking capabilities that set our processor apart."
             features={[
               {
-                title: "Unmatched Speed",                description: "Blazing-fast processing power for seamless multitasking and demanding applications.",                imageSrc: "https://webild.nyc3.cdn.digitaloceanspaces.com/webild-assets/image-placeholder-square.jpg",                imageAlt: "Speed icon",                buttonIcon: Star
+                title: "Unmatched Speed",                description: "Blazing-fast processing power for seamless multitasking and demanding applications.",                imageSrc: "https://webild.nyc3.cdn.digitaloceanspaces.com/webild-assets/image-placeholder-square.jpg?_wi=1",                imageAlt: "Speed icon",                buttonIcon: Star
               },
               {
-                title: "Energy Efficiency",                description: "Advanced power management ensures optimal performance with minimal energy consumption.",                imageSrc: "https://webild.nyc3.cdn.digitaloceanspaces.com/webild-assets/image-placeholder-square.jpg",                imageAlt: "Efficiency icon",                buttonIcon: CheckCircle
+                title: "Energy Efficiency",                description: "Advanced power management ensures optimal performance with minimal energy consumption.",                imageSrc: "https://webild.nyc3.cdn.digitaloceanspaces.com/webild-assets/image-placeholder-square.jpg?_wi=2",                imageAlt: "Efficiency icon",                buttonIcon: CheckCircle
               },
               {
-                title: "Integrated AI Core",                description: "Dedicated AI processing unit accelerates machine learning workloads and intelligent features.",                imageSrc: "https://webild.nyc3.cdn.digitaloceanspaces.com/webild-assets/image-placeholder-square.jpg",                imageAlt: "AI icon",                buttonIcon: Star
+                title: "Integrated AI Core",                description: "Dedicated AI processing unit accelerates machine learning workloads and intelligent features.",                imageSrc: "https://webild.nyc3.cdn.digitaloceanspaces.com/webild-assets/image-placeholder-square.jpg?_wi=3",                imageAlt: "AI icon",                buttonIcon: Star
               },
               {
-                title: "Future-Proof Architecture",                description: "Designed to adapt to future technological advancements, ensuring longevity and relevance.",                imageSrc: "https://webild.nyc3.cdn.digitaloceanspaces.com/webild-assets/image-placeholder-square.jpg",                imageAlt: "Future icon",                buttonIcon: CheckCircle
+                title: "Future-Proof Architecture",                description: "Designed to adapt to future technological advancements, ensuring longevity and relevance.",                imageSrc: "https://webild.nyc3.cdn.digitaloceanspaces.com/webild-assets/image-placeholder-square.jpg?_wi=4",                imageAlt: "Future icon",                buttonIcon: CheckCircle
               }
             ]}
             useInvertedBackground={false}
