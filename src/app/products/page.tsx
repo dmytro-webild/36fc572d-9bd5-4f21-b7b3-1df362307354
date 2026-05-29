@@ -88,6 +88,7 @@ export default function ProductListingPage() {
             }))}
             gridVariant="three-columns-all-equal-width"
             animationType="slide-up"
+            textboxLayout="default"
             useInvertedBackground={false}
           />
         </div>
