@@ -15,9 +15,9 @@ export default function LandingPage() {
         borderRadius="soft"
         contentWidth="small"
         sizing="mediumSizeLargeTitles"
-        background="circleGradient"
+        background="aurora"
         cardStyle="glass-elevated"
-        primaryButtonStyle="gradient"
+        primaryButtonStyle="diagonal-gradient"
         secondaryButtonStyle="radial-glow"
         headingFontWeight="bold"
     >
@@ -28,7 +28,9 @@ export default function LandingPage() {
         { name: "Home", id: "/" },
         { name: "Products", id: "/products" },
         { name: "About", id: "/about" },
-        { name: "Contact", id: "/contact" }
+        { name: "Contact", id: "/contact" },
+        { name: "Checkout", id: "/checkout" },
+        { name: "Confirmation", id: "/payment-confirmation" }
       ]}
       brandName="Smart Digital Store"
     />
@@ -79,8 +81,8 @@ export default function LandingPage() {
   <div id="footer" data-section="footer">
       <FooterBase
       columns={[
-        { title: "Company", items: [{ label: "About", href: "/about" }, { label: "Contact", href: "/contact" }, { label: "Products", href: "/products" }] },
-        { title: "Resources", items: [{ label: "All Guides", href: "/" }, { label: "Privacy", href: "#" }] }
+        { title: "Company", items: [{ label: "About", href: "/about" }, { label: "Contact", href: "/contact" }, { label: "Products", href: "/products" }, { label: "Checkout", href: "/checkout" }] },
+        { title: "Resources", items: [{ label: "All Guides", href: "/" }, { label: "Payment Confirmation", href: "/payment-confirmation" }, { label: "Privacy", href: "#" }] }
       ]}
       logoText="Smart Digital Store"
     />
