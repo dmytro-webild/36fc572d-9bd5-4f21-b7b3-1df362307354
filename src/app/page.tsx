@@ -6,7 +6,6 @@ import FooterBase from '@/components/sections/footer/FooterBase';
 import HeroSplitDoubleCarousel from '@/components/sections/hero/HeroSplitDoubleCarousel';
 import MetricCardSeven from '@/components/sections/metrics/MetricCardSeven';
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
-import ProductDetailCard from '@/components/ecommerce/productDetail/ProductDetailCard';
 
 export default function LandingPage() {
   return (
@@ -75,15 +74,7 @@ export default function LandingPage() {
     />
   </div>
 
-  <div id="ecommerce" data-section="ecommerce">
-      <ProductDetailCard 
-        layout="page"
-        name="All-Access Entrepreneur Guide"
-        price="$299"
-        images={[{ src: "http://img.b2bpic.net/free-photo/laptop-dark-night-desktop_169016-53733.jpg", alt: "Detail" }]}
-        buttons={[{ text: "Buy Now" }]}
-      />
-  </div>
+  
 
   <div id="footer" data-section="footer">
       <FooterBase
