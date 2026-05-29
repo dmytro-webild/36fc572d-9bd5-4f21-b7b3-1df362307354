@@ -6,7 +6,6 @@ import FooterBase from '@/components/sections/footer/FooterBase';
 import HeroSplitDoubleCarousel from '@/components/sections/hero/HeroSplitDoubleCarousel';
 import MetricCardSeven from '@/components/sections/metrics/MetricCardSeven';
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
-import PricingCardNine from '@/components/sections/pricing/PricingCardNine';
 import ProductDetailCard from '@/components/ecommerce/productDetail/ProductDetailCard';
 
 export default function LandingPage() {
@@ -61,20 +60,6 @@ export default function LandingPage() {
     />
   </div>
 
-
-  <div id="pricing" data-section="pricing">
-      <PricingCardNine
-      title="Pricing Plans"
-      description="Choose the plan that best fits your business growth stage."
-      plans={[
-        { id: "p1", period: "monthly", title: "Starter", price: "$29", features: ["Basic Guides", "Community Access"], button: { text: "Get Started" } },
-        { id: "p2", period: "monthly", title: "Pro", price: "$99", features: ["All Guides", "1-on-1 Strategy", "Templates"], button: { text: "Get Started" } }
-      ]}
-      animationType="slide-up"
-      textboxLayout="default"
-      useInvertedBackground={false}
-    />
-  </div>
 
   <div id="metric" data-section="metric">
       <MetricCardSeven
