@@ -26,12 +26,10 @@ export default function LandingPage() {
   <div id="nav" data-section="nav">
       <NavbarLayoutFloatingOverlay
       navItems={[
-        {
-          name: "Home",          id: "/"},
-        {
-          name: "About",          id: "/about"},
-        {
-          name: "Contact",          id: "/contact"},
+        { name: "Home", id: "/" },
+        { name: "Products", id: "/products" },
+        { name: "About", id: "/about" },
+        { name: "Contact", id: "/contact" }
       ]}
       brandName="Smart Digital Store"
     />
@@ -76,6 +74,8 @@ export default function LandingPage() {
               label: "About",              href: "/about"},
             {
               label: "Contact",              href: "/contact"},
+            {
+              label: "Products",              href: "/products"}
           ],
         },
         {

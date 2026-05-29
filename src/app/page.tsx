@@ -29,8 +29,9 @@ export default function LandingPage() {
       <NavbarLayoutFloatingOverlay
       navItems={[
         { name: "Home", id: "/" },
+        { name: "Products", id: "/products" },
         { name: "About", id: "/about" },
-        { name: "Contact", id: "/contact" },
+        { name: "Contact", id: "/contact" }
       ]}
       brandName="Smart Digital Store"
     />
@@ -57,7 +58,7 @@ export default function LandingPage() {
         { imageSrc: "http://img.b2bpic.net/free-photo/computer-dark-room-with-graphs-screen_169016-55085.jpg", imageAlt: "Smart Digital Store Hero" },
         { imageSrc: "http://img.b2bpic.net/free-photo/cozy-hobby-growing-indoor-plants-home_185193-108761.jpg", imageAlt: "Smart Digital Store Hero" },
       ]}
-      buttons={[{ text: "Get the Guide", href: "#products" }]}
+      buttons={[{ text: "Get the Guide", href: "/products" }]}
     />
   </div>
 
@@ -105,15 +106,13 @@ export default function LandingPage() {
         layout="page"
         name="All-Access Entrepreneur Guide"
         price="$299"
-        images={[{ src: "http://img.b2bpic.net/free-photo/laptop-dark-night-desktop_169016-53733.jpg", alt: "Detail" }]}
-        buttons={[{ text: "Buy Now" }]}
-      />
+        images={[{ src: "http://img.b2bpic.net/free-photo/laptop-dark-night-desktop_169016-53733.jpg", alt: "Detail" }]}n        buttons={[{ text: "Buy Now" }]}n      />
   </div>
 
   <div id="footer" data-section="footer">
       <FooterBase
       columns={[
-        { title: "Company", items: [{ label: "About", href: "/about" }, { label: "Contact", href: "/contact" }] },
+        { title: "Company", items: [{ label: "About", href: "/about" }, { label: "Contact", href: "/contact" }, { label: "Products", href: "/products" }] },
         { title: "Resources", items: [{ label: "All Guides", href: "/" }, { label: "Privacy", href: "#" }] },
       ]}
       logoText="Smart Digital Store"
