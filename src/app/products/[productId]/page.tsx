@@ -4,7 +4,8 @@ import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import FooterBase from '@/components/sections/footer/FooterBase';
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
-import ProductCardFour from '@/components/sections/product/ProductCardFour';
+import FeatureCardTwentyOne from '@/components/sections/feature/FeatureCardTwentyOne';
+import TestimonialCardFifteen from '@/components/sections/testimonial/TestimonialCardFifteen';
 
 const mockProducts = [
   {
@@ -46,7 +47,63 @@ const mockProducts = [
   }
 ];
 
-export default function ProductListingPage() {
+interface ProductPageProps {
+  params: { productId: string };
+}
+
+export default function ProductPage({ params }: ProductPageProps) {
+  const { productId } = params;
+  const product = mockProducts.find((p) => p.id === productId);
+
+  if (!product) {
+    return (
+      <ThemeProvider
+        defaultButtonVariant="shift-hover"
+        defaultTextAnimation="reveal-blur"
+        borderRadius="soft"
+        contentWidth="small"
+        sizing="mediumSizeLargeTitles"
+        background="circleGradient"
+        cardStyle="glass-elevated"
+        primaryButtonStyle="gradient"
+        secondaryButtonStyle="radial-glow"
+        headingFontWeight="bold"
+      >
+        <ReactLenis root>
+          <div id="nav" data-section="nav">
+            <NavbarLayoutFloatingOverlay
+              navItems={[
+                { name: "Home", id: "/" },
+                { name: "Products", id: "/products" },
+                { name: "About", id: "/about" },
+                { name: "Contact", id: "/contact" }
+              ]}
+              brandName="Smart Digital Store"
+            />
+          </div>
+          <div className="flex flex-col items-center justify-center min-h-screen text-center py-20">
+            <h1 className="text-4xl font-bold mb-4">Product Not Found</h1>
+            <p className="text-lg">The product you are looking for does not exist.</p>
+            <a href="/products" className="mt-8 px-6 py-3 bg-primary-cta text-white rounded-md hover:opacity-90 transition-opacity">
+              Back to Products
+            </a>
+          </div>
+          <div id="footer" data-section="footer">
+            <FooterBase
+              columns={[
+                { title: "Company", items: [{ label: "About", href: "/about" }, { label: "Contact", href: "/contact" }, { label: "Products", href: "/products" }] },
+                { title: "Resources", items: [{ label: "All Guides", href: "/" }, { label: "Privacy", href: "#" }] }
+              ]}
+              logoText="Smart Digital Store"
+            />
+          </div>
+        </ReactLenis>
+      </ThemeProvider>
+    );
+  }
+
+  const featuredReview = product.reviews.length > 0 ? product.reviews[0] : null;
+
   return (
     <ThemeProvider
         defaultButtonVariant="shift-hover"
@@ -73,23 +130,51 @@ export default function ProductListingPage() {
           />
         </div>
 
-        <div id="products-listing" data-section="products-listing">
-          <ProductCardFour
-            title="Our Products"
-            description="Explore our range of digital guides and courses designed for entrepreneurs."
-            products={mockProducts.map((product) => ({
-              id: product.id,
-              name: product.name,
-              price: product.price,
-              variant: product.variant,
-              imageSrc: product.imageSrc,
-              imageAlt: product.imageAlt,
-              onProductClick: () => window.location.href = `/products/${product.id}`
-            }))}
-            gridVariant="three-columns-all-equal-width"
-            animationType="slide-up"
+        <div id="product-details" data-section="product-details">
+          <FeatureCardTwentyOne
+            title={product.name}
+            description={`${product.description} Price: ${product.price} (${product.variant}).`}
+            bulletPoints={product.details.map(detail => ({ title: detail, description: "" }))}
+            imageSrc={product.imageSrc}
+            imageAlt={product.imageAlt}
+            mediaAnimation="slide-up"
+            mediaPosition="left"
             useInvertedBackground={false}
+            buttons={[{ text: "Buy Now", href: "#" }]} // Placeholder buy button
           />
+        </div>
+
+        <div id="customer-reviews" data-section="customer-reviews">
+          {product.reviews.length > 0 ? (
+            <div className="py-20 flex flex-col items-center justify-center">
+              <h2 className="text-3xl font-bold mb-10">Customer Reviews</h2>
+              {/* Display a featured review using TestimonialCardFifteen */}
+              {featuredReview && (
+                <TestimonialCardFifteen
+                  testimonial={featuredReview.testimonial}
+                  rating={featuredReview.rating}
+                  author={featuredReview.author}
+                  avatars={featuredReview.avatars}
+                  ratingAnimation="reveal-blur"
+                  avatarsAnimation="slide-up"
+                  useInvertedBackground={false}
+                  className="max-w-xl mx-auto mb-10"
+                />
+              )}
+              {/* Simple display for other reviews */}
+              {product.reviews.length > 1 && (
+                <div className="text-center">
+                  <p className="text-lg">And {product.reviews.length - 1} more reviews...</p>
+                  {/* You could list more reviews here if a suitable component was available or create custom cards */}
+                </div>
+              )}
+            </div>
+          ) : (
+            <div className="py-20 text-center">
+              <h2 className="text-3xl font-bold mb-4">Customer Reviews</h2>
+              <p className="text-lg">No reviews yet for this product. Be the first to review!</p>
+            </div>
+          )}
         </div>
 
         <div id="footer" data-section="footer">
