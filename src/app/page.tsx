@@ -57,7 +57,7 @@ export default function LandingPage() {
         { imageSrc: "http://img.b2bpic.net/free-photo/computer-dark-room-with-graphs-screen_169016-55085.jpg", imageAlt: "Smart Digital Store Hero" },
         { imageSrc: "http://img.b2bpic.net/free-photo/cozy-hobby-growing-indoor-plants-home_185193-108761.jpg", imageAlt: "Smart Digital Store Hero" }
       ]}
-      buttons={[{ text: "Get the Guide", href: "/products" }]
+      buttons={[{ text: "Get the Guide", href: "/products" }]}
     />
   </div>
 
@@ -96,7 +96,7 @@ export default function LandingPage() {
         name="All-Access Entrepreneur Guide"
         price="$299"
         images={[{ src: "http://img.b2bpic.net/free-photo/laptop-dark-night-desktop_169016-53733.jpg", alt: "Detail" }]}
-        buttons={[{ text: "Buy Now" }]
+        buttons={[{ text: "Buy Now" }]}
       />
   </div>
 
