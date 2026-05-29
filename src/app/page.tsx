@@ -48,7 +48,7 @@ export default function LandingPage() {
         { imageSrc: "http://img.b2bpic.net/free-photo/i-found-best-solution_329181-699.jpg", imageAlt: "Smart Digital Store Hero" },
         { imageSrc: "http://img.b2bpic.net/free-photo/man-blue-suit-posing-white-artistic-wall-from-bricks_613910-10622.jpg", imageAlt: "Smart Digital Store Hero" },
         { imageSrc: "http://img.b2bpic.net/free-photo/smart-attractive-smiling-asian-female-business-owner-entrepreneur-hand-hold-coffee-cup-portrait-shot-looking-camera-with-confidentwoman-sitting-table-home-studio_609648-2602.jpg", imageAlt: "Smart Digital Store Hero" },
-        { imageSrc: "http://img.b2bpic.net/free-photo/top-view-laptop-table-glowing-screen-dark_169016-53642.jpg", imageAlt: "Smart Digital Store Hero" },
+        { imageSrc: "http://img.b2bpic.net/free-photo/top-view-laptop-table-glowing-screen-dark_169016-53642.jpg", imageAlt: "Smart Digital Store Hero" }
       ]}
       rightCarouselItems={[
         { imageSrc: "http://img.b2bpic.net/free-photo/cool-background-blank-wallpaper-place-your-concept_1194-641481.jpg", imageAlt: "Smart Digital Store Hero" },
@@ -56,7 +56,7 @@ export default function LandingPage() {
         { imageSrc: "http://img.b2bpic.net/free-photo/smart-attractive-smiling-asian-female-business-owner-entrepreneur-hand-hold-coffee-cup-portrait-shot-looking-camera-with-confidentwoman-sitting-table-home-studio_609648-2611.jpg", imageAlt: "Smart Digital Store Hero" },
         { imageSrc: "http://img.b2bpic.net/free-psd/marketing-strategy-banner-template_23-2148995530.jpg", imageAlt: "Smart Digital Store Hero" },
         { imageSrc: "http://img.b2bpic.net/free-photo/computer-dark-room-with-graphs-screen_169016-55085.jpg", imageAlt: "Smart Digital Store Hero" },
-        { imageSrc: "http://img.b2bpic.net/free-photo/cozy-hobby-growing-indoor-plants-home_185193-108761.jpg", imageAlt: "Smart Digital Store Hero" },
+        { imageSrc: "http://img.b2bpic.net/free-photo/cozy-hobby-growing-indoor-plants-home_185193-108761.jpg", imageAlt: "Smart Digital Store Hero" }
       ]}
       buttons={[{ text: "Get the Guide", href: "/products" }]}
     />
@@ -68,7 +68,7 @@ export default function LandingPage() {
       products={[
         { id: "p1", name: "Identify Problems", price: "$29", rating: 5, imageSrc: "http://img.b2bpic.net/free-psd/digital-marketing-agency-corporate-facebook-cover-template-design_84443-24504.jpg" },
         { id: "p2", name: "Validate Idea", price: "$29", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/top-view-boss-s-day-arrangement-light-blue-background_23-2148664089.jpg" },
-        { id: "p3", name: "Business Plan", price: "$29", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/contemporary-home-office-urban-apartment-decorated-with-wooden-furniture_482257-119606.jpg" },
+        { id: "p3", name: "Business Plan", price: "$29", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/contemporary-home-office-urban-apartment-decorated-with-wooden-furniture_482257-119606.jpg" }
       ]}
     />
   </div>
@@ -106,14 +106,16 @@ export default function LandingPage() {
         layout="page"
         name="All-Access Entrepreneur Guide"
         price="$299"
-        images={[{ src: "http://img.b2bpic.net/free-photo/laptop-dark-night-desktop_169016-53733.jpg", alt: "Detail" }]}n        buttons={[{ text: "Buy Now" }]}n      />
+        images={[{ src: "http://img.b2bpic.net/free-photo/laptop-dark-night-desktop_169016-53733.jpg", alt: "Detail" }]}
+        buttons={[{ text: "Buy Now" }]}
+      />
   </div>
 
   <div id="footer" data-section="footer">
       <FooterBase
       columns={[
         { title: "Company", items: [{ label: "About", href: "/about" }, { label: "Contact", href: "/contact" }, { label: "Products", href: "/products" }] },
-        { title: "Resources", items: [{ label: "All Guides", href: "/" }, { label: "Privacy", href: "#" }] },
+        { title: "Resources", items: [{ label: "All Guides", href: "/" }, { label: "Privacy", href: "#" }] }
       ]}
       logoText="Smart Digital Store"
     />
